@@ -25,6 +25,7 @@ public class Tests {
     }
 
     @Test
+    @AllureId("10861")
     @DisplayName("Авторизация через гугл")
     void test02() {
         step("Открыть главную страницу", () -> {
