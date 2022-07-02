@@ -30,6 +30,19 @@ public class Tests {
     }
 
     @Test
+    @DisplayName("Авторизация через гугл")
+    void test02() {
+        step("Открыть главную страницу", () -> {
+            step("Нажать на кнопку Войти через Гугл аккаунт");
+        });
+        step("Ввести данные гугл почты 'random@gmail.com'");
+        step("Нажать на кнопку Войти");
+        step("Разлогиниться");
+    }
+
+
+    /*
+    @Test
     @AllureId("10860")
     @DisplayName("Тест-кейс из Идеи")
     void test02() {
@@ -51,5 +64,5 @@ public class Tests {
         });
 
 
-    }
+    }*/
 }
